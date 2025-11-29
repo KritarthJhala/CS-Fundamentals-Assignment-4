@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #0074e8;
+}
+
+
+.hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #0074e8, #6ec6ff);
+    color: white;
+    text-align: center;
+}
+
+
+.highlight {
+    color: yellow;
+    animation: colorchange 2s infinite alternate;
+}
+
+
+@keyframes colorchange {
+    0% { color: #fff; }
+    100% { color: #ffe600; }
+}
+
+
+section {
+    padding: 60px 40px;
+}
+
+
+.about, .skills, .projects, .contact {
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.skills .skill-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.skill {
+    background: #0074e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.project-card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    background: #0074e8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #005bb5;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
